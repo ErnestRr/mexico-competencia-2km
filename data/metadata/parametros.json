@@ -1,0 +1,21 @@
+{
+  "semilla": 2026,
+  "bootstrap_replicas": 500,
+  "canal": "Supermercado / Tienda de Autoservicio",
+  "focales": [
+    "Walmart de México",
+    "Soriana",
+    "Chedraui"
+  ],
+  "evaluables": [
+    "Walmart de México",
+    "Soriana"
+  ],
+  "radios_km": [
+    1,
+    2,
+    3
+  ],
+  "radio_principal_km": 2,
+  "min_sin": 10
+}

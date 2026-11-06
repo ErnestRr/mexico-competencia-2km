@@ -1,0 +1,131 @@
+# Textos del análisis. Los marcadores {clave} o {clave:.0f} se llenan con data/processed/resultados.json.
+nombre: mexico-competencia-2km
+titulo: "¿Un competidor a 2 km baja tus precios?"
+objetivo: "Mostrar a directores y dueños si la competencia cercana cambia el precio de una tienda, como caso de competencia local para decisiones de expansión y de precio por tienda."
+pregunta: "Una tienda de Walmart de México o Soriana con un competidor de otra cadena a menos de 2 km, ¿tiene precios distintos a una sin competidor cerca en la misma ciudad?"
+preguntas_secundarias:
+  - "Una tienda de Walmart de México, Soriana o Chedraui con un competidor de otra cadena a menos de 2 km, ¿tiene precios distintos a una sin competidor cerca, en la misma ciudad?"
+  - "¿El efecto cambia según quién sea el competidor?"
+  - "¿Qué tan sensible es el resultado al radio (1, 2 y 3 km)?"
+audiencias: [Dirección comercial y de expansión, Dueño de tienda o cadena, Analista comercial]
+graficas:
+  - archivo: 01_efecto_por_cadena.png
+    titulo: "Con y sin competidor, por cadena"
+    pie: "Diferencia en el índice de precio entre tiendas con y sin competidor a 2 km, misma cadena y ciudad."
+  - archivo: 02_efecto_por_radio.png
+    titulo: "Según el radio"
+    pie: "La misma comparación a 1, 2 y 3 km."
+  - archivo: 03_efecto_por_tipo.png
+    titulo: "Según el competidor"
+    pie: "Diferencia según el grupo del competidor cercano."
+  - archivo: 04_indice_vs_distancia.png
+    titulo: "Índice y distancia"
+    pie: "Índice de cada sucursal según la distancia a su competidor más cercano."
+readme:
+  hallazgo_principal: >-
+    **Una tienda de Walmart de México o Soriana con un competidor de otra cadena a menos de 2 km no es más barata: su índice de
+    precio es {ef_total:+.2f}% (IC90 {ef_total_inf:+.2f} a {ef_total_sup:+.2f}%) frente a una de la misma cadena y ciudad sin
+    competidor cerca.** La diferencia es de décimas de punto y no se distingue de cero. Es una correlación entre {tiendas_ev:.0f}
+    tiendas, no un experimento: las cadenas no abren tiendas al azar. Y «sin competidor» significa sin competidor monitoreado por
+    PROFECO.
+  grafica_principal: outputs/charts/01_efecto_por_cadena.png
+  alt_grafica: "Diferencia en el índice de precio entre tiendas con y sin competidor cercano, por cadena"
+  nota_principal: >-
+    Índice de la tienda = cuánto cobra, en promedio, frente a las otras tiendas de su ciudad por los mismos productos. Diferencia
+    = coeficiente de «tiene competidor a 2 km» con efectos fijos de ciudad y cadena. IC90 = rango probable, por bootstrap de ciudades.
+  hallazgos_apoyo:
+    - >-
+      **Con ningún radio aparece un descuento por competencia.** A 1 km la diferencia es {radio_1km:+.2f}% (IC90 {radio_1km_inf:+.2f}
+      a {radio_1km_sup:+.2f}%) y a 3 km {radio_3km:+.2f}% (IC90 {radio_3km_inf:+.2f} a {radio_3km_sup:+.2f}%, con solo {radio_3km_sin:.0f}
+      tiendas sin competidor). Con la distancia continua, duplicar la distancia al competidor más cercano se asocia con
+      {duplicar_distancia:+.2f}% en el índice. Si algo, las tiendas con competencia cerca cobran apenas más, lo que es compatible con
+      que estén en zonas urbanas más caras.
+    - >-
+      **Ningún tipo de competidor se asocia con precios más bajos.** Tener cerca una tienda de Chedraui: {tipo_chedraui:+.2f}% (IC90
+      {tipo_chedraui_inf:+.2f} a {tipo_chedraui_sup:+.2f}); de Soriana: {tipo_soriana:+.2f}%; de Walmart de México: {tipo_walmex:+.2f}%
+      (IC90 {tipo_walmex_inf:+.2f} a {tipo_walmex_sup:+.2f}); de otras cadenas: {tipo_otro:+.2f}% (IC90 {tipo_otro_inf:+.2f} a
+      {tipo_otro_sup:+.2f}), el único distinto de cero, y hacia arriba.
+    - >-
+      **El precio se fija por ciudad, no por esquina.** Las sucursales del mismo formato en la misma ciudad cobran el mismo precio
+      (±2%) en {igual_walmart:.0f}% de los productos en Walmart y {igual_bodega:.0f}% en Bodega Aurrerá. En Soriana las sucursales
+      difieren más ({igual_soriana:.0f}% en Hipermercado y {igual_mega:.0f}% en Mega), pero esa diferencia no sigue a la competencia
+      cercana.
+  no_solido: >-
+    El efecto por cadena no tiene precisión suficiente: Walmart de México {ef_walmex:+.2f}% (IC90 {ef_walmex_inf:+.2f} a
+    {ef_walmex_sup:+.2f}) y Soriana {ef_soriana:+.2f}% (IC90 {ef_soriana_inf:+.2f} a {ef_soriana_sup:+.2f}); con {sinamb_soriana_2km:.0f} tiendas de
+    Soriana sin competidor, un efecto de 1% no se podría descartar. Chedraui no se puede evaluar: solo {sin_chedraui_2km:.0f} de sus
+    tiendas no tienen competidor a 2 km. A 3 km la comparación descansa en {radio_3km_sin:.0f} tiendas.
+  alcance: "Aplica a los supermercados que monitorea PROFECO. «Sin competidor» quiere decir sin competidor monitoreado por PROFECO: puede haber tiendas cercanas que el archivo no visita. Correlación, no causalidad."
+  acciones:
+    "Dirección comercial y de expansión":
+      - "**No espere bajar precios al abrir junto a un competidor, ni subirlos donde no lo hay.** En el anaquel, la diferencia entre tiendas con y sin competidor a 2 km es de {ef_total:+.2f}% y no se distingue de cero."
+      - "**Evalúe la ubicación por tráfico y surtido, no por la guerra de precios local.** El precio de anaquel de las grandes cadenas se fija por ciudad: {igual_walmart:.0f}% de los productos cuesta lo mismo en todas las sucursales de Walmart de la ciudad."
+    "Dueño de tienda o cadena":
+      - "**Si su precio varía entre sucursales, que sea por una razón.** En Soriana las sucursales del mismo formato difieren más que en Walmart, pero esa variación no responde a la competencia cercana: es costo sin estrategia."
+      - "**La competencia local se libra en promociones, servicio y surtido.** Este análisis solo ve el precio de anaquel de la quincena; ahí la competencia de la esquina no se nota."
+    "Analista comercial":
+      - "**Compare tiendas de la misma cadena y ciudad.** Comparar ciudades distintas confunde el costo de la ciudad con la competencia."
+      - "**Revise la cobertura antes de estimar.** A 3 km solo quedan {radio_3km_sin:.0f} tiendas sin competidor; con tan pocas, cualquier cifra es frágil."
+      - "**Diga qué significa «sin competidor».** Aquí, sin competidor monitoreado por PROFECO."
+  como_se_hizo:
+    - "Supermercados monitoreados por PROFECO del 16 al 31 de agosto de 2026, con coordenada confiable ({super_coord_ok:.0f} de {super_total:.0f})."
+    - "Índice de cada tienda: promedio de log(precio / precio promedio del mismo SKU en las otras tiendas de su municipio), con una mediana de {skus_mediana:.0f} productos por tienda."
+    - "Competidor = supermercado de otro grupo monitoreado por PROFECO a 2 km o menos (sensibilidad: 1 y 3 km y distancia continua)."
+    - "Regresión del índice con efectos fijos de ciudad y cadena; IC90 por bootstrap de municipios (500 réplicas, semilla 2026). Walmart de México y Soriana; Chedraui no evaluable."
+  limitaciones:
+    - "**Universo:** solo tiendas monitoreadas por PROFECO; una tienda «sin competidor» puede tener cerca una tienda que PROFECO no visita."
+    - "**Causalidad:** las cadenas eligen dónde abrir; una diferencia (o la falta de ella) no prueba que la competencia mueva o no el precio."
+    - "**Potencia:** {radio_2km_sin:.0f} tiendas de Walmart de México y Soriana sin competidor a 2 km; un efecto pequeño por cadena no se puede descartar."
+    - "**Precio de anaquel:** no se observan promociones de tarjeta, cupones ni precios en línea."
+    - "**Periodo:** una quincena (16–31 ago 2026)."
+  metodo: |-
+    **00 · Validación y datos.** Tablas comunes `tiendas` (con la bandera `coord_ok`) y `precio_tienda_sku`. Tiendas con coordenada
+    confiable: {coord_ok_total:,.0f} de {tiendas_total:,.0f}; supermercados: {super_coord_ok:.0f} de {super_total:.0f}. Tiendas focales
+    (Walmart de México, Soriana y Chedraui) con índice: {focales:.0f}.
+
+    | Radio | Con competidor | Sin competidor | Sin competidor en ciudades con ambos tipos | Ciudades con ambos tipos |
+    |---|---|---|---|---|
+    | 1 km | {con_total_1km:.0f} | {sin_total_1km:.0f} | {sinamb_total_1km:.0f} | {ciud_total_1km:.0f} |
+    | 2 km | {con_total_2km:.0f} | {sin_total_2km:.0f} | {sinamb_total_2km:.0f} | {ciud_total_2km:.0f} |
+    | 3 km | {con_total_3km:.0f} | {sin_total_3km:.0f} | {sinamb_total_3km:.0f} | {ciud_total_3km:.0f} |
+
+    A 2 km, tiendas sin competidor en ciudades con ambos tipos: Walmart de México {sinamb_walmex_2km:.0f}, Soriana
+    {sinamb_soriana_2km:.0f}, Chedraui {sinamb_chedraui_2km:.0f} (no evaluable).
+
+    **01 · Efecto a 2 km.** Índice ~ competidor + efectos fijos de municipio y formato. Sensibilidad (con Chedraui en la regresión,
+    tiendas con 300 SKUs o más, solo ciudades con ambos tipos, efecto fijo de grupo): entre {sens_min:+.2f}% y {sens_max:+.2f}%, ninguna
+    distinta de cero.
+
+    **02 · Tipo de competidor.** Indicadores de cada grupo de competidor a 2 km en la misma regresión.
+
+    **03 · Radio y distancia.** Radios de 1, 2 y 3 km; log de la distancia al competidor más cercano (topada entre 0.2 y 10 km).
+
+    **04 · Implicaciones.** Precio igual (±2%) entre sucursales del mismo formato en la misma ciudad (`estadistica.same_chain_same_city`).
+
+    **05 · Visualizaciones.** Gráficas, versiones para publicar y reporte interactivo.
+  fuentes: []
+reporte:
+  descripcion: "Si un competidor a menos de 2 km se asocia con precios distintos en supermercados de Walmart de México y Soriana. PROFECO, agosto de 2026."
+  h1: "Una tienda con competidor a menos de 2 km no es más barata: <b>{ef_total:+.2f}%</b> frente a una sin competidor cerca"
+  intro: >-
+    {tiendas_ev:.0f} supermercados de Walmart de México y Soriana con coordenada confiable, comparados con tiendas de la misma cadena
+    y ciudad, monitoreados por PROFECO del 16 al 31 de agosto de 2026. «Sin competidor» = sin competidor monitoreado por PROFECO.
+    Correlación, no causalidad.
+  stats:
+    - valor: "{ef_total:+.2f}%"
+      clase: ""
+      texto: "diferencia del índice con competidor a 2 km (IC90 {ef_total_inf:+.2f} a {ef_total_sup:+.2f}): no distinta de cero"
+    - valor: "{con_total_2km:.0f} / {sin_total_2km:.0f}"
+      clase: ""
+      texto: "tiendas focales con y sin competidor a 2 km"
+    - valor: "{igual_walmart:.0f}%"
+      clase: ""
+      texto: "de los productos cuesta lo mismo en todas las sucursales de Walmart de la ciudad"
+    - valor: "{duplicar_distancia:+.2f}%"
+      clase: ""
+      texto: "cambio del índice al duplicar la distancia al competidor más cercano"
+  metodo:
+    - "Coordenadas confiables (bandera coord_ok de la tabla común tiendas); competidor = supermercado de otro grupo monitoreado por PROFECO."
+    - "Índice por tienda frente a las otras tiendas de su ciudad con los mismos productos."
+    - "Regresión con efectos fijos de ciudad y cadena; IC90 por bootstrap de municipios (500 réplicas, semilla 2026)."
+    - "Walmart de México y Soriana; Chedraui no evaluable. Correlación, no causalidad."

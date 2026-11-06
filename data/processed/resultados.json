@@ -1,0 +1,574 @@
+{
+  "tiendas_total": {
+    "cifra": 1857.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "coord_ok_total": {
+    "cifra": 1692.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "super_total": {
+    "cifra": 319.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "super_coord_ok": {
+    "cifra": 315.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "focales": {
+    "cifra": 247.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "skus_mediana": {
+    "cifra": 991.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_walmex_1km": {
+    "cifra": 46.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_walmex_1km": {
+    "cifra": 84.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_walmex_1km": {
+    "cifra": 46.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_walmex_1km": {
+    "cifra": 30.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_soriana_1km": {
+    "cifra": 35.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_soriana_1km": {
+    "cifra": 52.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_soriana_1km": {
+    "cifra": 27.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_soriana_1km": {
+    "cifra": 28.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_chedraui_1km": {
+    "cifra": 9.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_chedraui_1km": {
+    "cifra": 21.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_chedraui_1km": {
+    "cifra": 8.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_chedraui_1km": {
+    "cifra": 15.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_total_1km": {
+    "cifra": 90.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_total_1km": {
+    "cifra": 157.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_total_1km": {
+    "cifra": 81.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_total_1km": {
+    "cifra": 30.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_walmex_2km": {
+    "cifra": 92.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_walmex_2km": {
+    "cifra": 38.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_walmex_2km": {
+    "cifra": 33.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_walmex_2km": {
+    "cifra": 29.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_soriana_2km": {
+    "cifra": 70.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_soriana_2km": {
+    "cifra": 17.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_soriana_2km": {
+    "cifra": 16.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_soriana_2km": {
+    "cifra": 29.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_chedraui_2km": {
+    "cifra": 27.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_chedraui_2km": {
+    "cifra": 3.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_chedraui_2km": {
+    "cifra": 2.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_chedraui_2km": {
+    "cifra": 13.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_total_2km": {
+    "cifra": 189.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_total_2km": {
+    "cifra": 58.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_total_2km": {
+    "cifra": 51.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_total_2km": {
+    "cifra": 29.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_walmex_3km": {
+    "cifra": 114.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_walmex_3km": {
+    "cifra": 16.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_walmex_3km": {
+    "cifra": 14.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_walmex_3km": {
+    "cifra": 15.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_soriana_3km": {
+    "cifra": 80.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_soriana_3km": {
+    "cifra": 7.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_soriana_3km": {
+    "cifra": 7.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_soriana_3km": {
+    "cifra": 15.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_chedraui_3km": {
+    "cifra": 28.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_chedraui_3km": {
+    "cifra": 2.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_chedraui_3km": {
+    "cifra": 2.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_chedraui_3km": {
+    "cifra": 7.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "con_total_3km": {
+    "cifra": 222.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sin_total_3km": {
+    "cifra": 25.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "sinamb_total_3km": {
+    "cifra": 23.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ciud_total_3km": {
+    "cifra": 15.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "00_validacion_y_datos",
+    "nota": ""
+  },
+  "ef_total": {
+    "cifra": 0.3459763568341323,
+    "intervalo": [
+      -0.15785841344003737,
+      0.8783355371651425
+    ],
+    "n": 217,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "ef_walmex": {
+    "cifra": 0.25974821370267076,
+    "intervalo": [
+      -0.20601533939077488,
+      0.7444608444021616
+    ],
+    "n": 130,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "ef_soriana": {
+    "cifra": 0.5358447240212394,
+    "intervalo": [
+      -0.463495642403855,
+      1.7688120252428163
+    ],
+    "n": 87,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "sens_min": {
+    "cifra": 0.04426207933614368,
+    "intervalo": null,
+    "n": null,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "sens_max": {
+    "cifra": 0.5682267667738161,
+    "intervalo": null,
+    "n": null,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "sens_solidas": {
+    "cifra": 0.0,
+    "intervalo": null,
+    "n": 5,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "tiendas_ev": {
+    "cifra": 217.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "01_efecto_a_2km",
+    "nota": ""
+  },
+  "tipo_walmex": {
+    "cifra": 0.6301057825465861,
+    "intervalo": [
+      -0.09105618277996941,
+      1.298218043091559
+    ],
+    "n": 58,
+    "fuente": "02_tipo_de_competidor",
+    "nota": ""
+  },
+  "tipo_soriana": {
+    "cifra": 0.029726305118504825,
+    "intervalo": [
+      -0.43387758859123604,
+      0.4191494651641925
+    ],
+    "n": 64,
+    "fuente": "02_tipo_de_competidor",
+    "nota": ""
+  },
+  "tipo_chedraui": {
+    "cifra": -0.2739533507053471,
+    "intervalo": [
+      -0.8337361878038685,
+      0.12592685589956076
+    ],
+    "n": 43,
+    "fuente": "02_tipo_de_competidor",
+    "nota": ""
+  },
+  "tipo_otro": {
+    "cifra": 0.49484157700452336,
+    "intervalo": [
+      0.037180595182517706,
+      1.069007821458312
+    ],
+    "n": 68,
+    "fuente": "02_tipo_de_competidor",
+    "nota": ""
+  },
+  "tipo_solidos": {
+    "cifra": 1.0,
+    "intervalo": null,
+    "n": 4,
+    "fuente": "02_tipo_de_competidor",
+    "nota": ""
+  },
+  "radio_1km": {
+    "cifra": 0.41281456367254776,
+    "intervalo": [
+      0.04666534572392855,
+      0.900707701567427
+    ],
+    "n": 217,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "radio_1km_sin": {
+    "cifra": 136.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "radio_2km": {
+    "cifra": 0.3459763568341323,
+    "intervalo": [
+      -0.15785841344003737,
+      0.8783355371651425
+    ],
+    "n": 217,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "radio_2km_sin": {
+    "cifra": 55.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "radio_3km": {
+    "cifra": 1.5177362331767696,
+    "intervalo": [
+      0.4304354466995397,
+      2.712977493989155
+    ],
+    "n": 217,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "radio_3km_sin": {
+    "cifra": 23.0,
+    "intervalo": null,
+    "n": null,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "duplicar_distancia": {
+    "cifra": -0.2627450129943698,
+    "intervalo": [
+      -0.55193194728127,
+      -0.005191452610275871
+    ],
+    "n": null,
+    "fuente": "03_radio_y_distancia",
+    "nota": ""
+  },
+  "igual_walmart": {
+    "cifra": 86.22013651877133,
+    "intervalo": null,
+    "n": null,
+    "fuente": "04_implicaciones",
+    "nota": ""
+  },
+  "igual_bodega": {
+    "cifra": 80.39152240737745,
+    "intervalo": null,
+    "n": null,
+    "fuente": "04_implicaciones",
+    "nota": ""
+  },
+  "igual_soriana": {
+    "cifra": 58.5619285120532,
+    "intervalo": null,
+    "n": null,
+    "fuente": "04_implicaciones",
+    "nota": ""
+  },
+  "igual_mega": {
+    "cifra": 32.51088534107402,
+    "intervalo": null,
+    "n": null,
+    "fuente": "04_implicaciones",
+    "nota": ""
+  }
+}
